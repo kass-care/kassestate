@@ -20,6 +20,9 @@ use App\Http\Controllers\DealPipelineController;
 use App\Http\Controllers\RefinanceTrackerController;
 use App\Http\Controllers\ExpenseController;
 
+Route::get('/healthz', function () {
+    return response('OK', 200);
+});
 Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
