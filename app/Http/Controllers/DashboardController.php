@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Property;
+use App\Models\DealAnalysis;
 
 class DashboardController extends Controller
 {
@@ -16,11 +17,18 @@ class DashboardController extends Controller
 
         $totalRent = Property::sum('monthly_rent');
 
+        $totalEquity = DealAnalysis::sum('arv')
+            - (DealAnalysis::sum('purchase_price') + DealAnalysis::sum('rehab_cost'));
+
+        $totalDeals = DealAnalysis::count();
+
         return view('dashboard', compact(
             'totalProperties',
             'totalPurchaseValue',
             'totalArv',
-            'totalRent'
+            'totalRent',
+            'totalEquity',
+            'totalDeals'
         ));
     }
 }

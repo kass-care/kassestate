@@ -78,6 +78,19 @@
             <h3>Monthly Rent</h3>
             <div class="number">${{ number_format($totalRent,2) }}</div>
         </div>
+<div class="card">
+    <h3>Total Equity</h3>
+    <div class="number">
+        ${{ number_format($totalEquity,2) }}
+    </div>
+</div>
+
+<div class="card">
+    <h3>Deals Analyzed</h3>
+    <div class="number">
+        {{ $totalDeals }}
+    </div>
+</div>
 
     </div>
 
