@@ -12,6 +12,7 @@ use App\Http\Controllers\PortfolioMetricController;
 
 use App\Http\Controllers\CashFlowController;
 use App\Http\Controllers\RoiCalculationController;
+use App\Http\Controllers\NetWorthController;
 
 Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -28,3 +29,5 @@ Route::resource('tenants', TenantController::class);
 Route::get('/portfolio-metrics', [PortfolioMetricController::class, 'index'])->name('portfolio-metrics.index');
 Route::resource('cash-flows', CashFlowController::class);
 Route::resource('roi-calculations', RoiCalculationController::class);
+
+Route::resource('net-worths', NetWorthController::class);
