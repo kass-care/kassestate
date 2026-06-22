@@ -40,6 +40,9 @@
 	<a href="{{ route('investors.index') }}">
     	🤝 Investor CRM
 	</a>
+	<a href="{{ route('deal-pipelines.index') }}">
+    	🏠 Deal Pipeline
+	</a>
         <a href="#">⚙ Settings</a>
     </div>
 
