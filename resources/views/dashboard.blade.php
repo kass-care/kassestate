@@ -30,7 +30,9 @@
         <a href="{{ route('rehab-projects.index') }}">🔨 Rehab Tracker</a>
 	<a href="{{ route('documents.index') }}">📄 Documents</a>
         <a href="{{ route('tenants.index') }}">🏠 Tenant Manager</a>
-        <a href="#">📊 BRRRR Portfolio Analytics</a>
+        <a href="{{ route('portfolio-metrics.index') }}">
+    	📊 BRRRR Portfolio Analytics
+	</a>
 	<a href="#">💵 Cash Flow Dashboard</a>
 	<a href="#">📈 ROI Calculator</a>
 	<a href="#">💰 Net Worth Tracker</a>
