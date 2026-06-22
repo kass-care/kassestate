@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\DealAnalysisController;
 use App\Http\Controllers\RefinanceController;
+use App\Http\Controllers\RehabProjectController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -14,3 +15,5 @@ Route::post('/properties', [PropertyController::class, 'store'])->name('properti
 Route::resource('deal-analyses', DealAnalysisController::class);
 Route::resource('refinances', RefinanceController::class);
 Route::resource('refinances', RefinanceController::class);
+
+Route::resource('rehab-projects', RehabProjectController::class);
