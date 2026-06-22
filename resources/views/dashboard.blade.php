@@ -37,7 +37,9 @@
 	<a href="{{ route('roi-calculations.index') }}">📈 ROI Calculator</a>
 	<a href="{{ route('net-worths.index') }}">💰 Net Worth Tracker</a>
 	<a href="{{ route('lenders.index') }}">🏦 Lender CRM</a>
-	<a href="#">🤝 Investor CRM</a>
+	<a href="{{ route('investors.index') }}">
+    	🤝 Investor CRM
+	</a>
         <a href="#">⚙ Settings</a>
     </div>
 
