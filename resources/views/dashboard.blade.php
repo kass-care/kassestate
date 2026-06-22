@@ -44,6 +44,7 @@
 	<a href="{{ route('deal-pipelines.index') }}">
     	🏠 Deal Pipeline
 	</a>
+	<a href="{{ route('expenses.index') }}">💵 Expense Tracker</a>
         <a href="#">⚙ Settings</a>
     </div>
 
