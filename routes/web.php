@@ -17,6 +17,8 @@ use App\Http\Controllers\LenderController;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\DealPipelineController;
 
+use App\Http\Controllers\RefinanceTrackerController;
+
 Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -37,3 +39,4 @@ Route::resource('net-worths', NetWorthController::class);
 Route::resource('lenders', LenderController::class);
 Route::resource('investors', InvestorController::class);
 Route::resource('deal-pipelines', DealPipelineController::class);
+Route::resource('refinance-trackers', RefinanceTrackerController::class);
