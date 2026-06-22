@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+	Schema::create('roi_calculations', function (Blueprint $table) {
+    $table->id();
+
+    $table->string('property_name');
+
+    $table->decimal('purchase_price',12,2);
+    $table->decimal('rehab_cost',12,2);
+    $table->decimal('annual_cash_flow',12,2);
+    $table->decimal('equity_created',12,2);
+
+    $table->decimal('roi_percent',8,2)->nullable();
+
+    $table->timestamps();
+});
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('roi_calculations');
+    }
+};

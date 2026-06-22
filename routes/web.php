@@ -11,6 +11,7 @@ use App\Http\Controllers\TenantController;
 use App\Http\Controllers\PortfolioMetricController;
 
 use App\Http\Controllers\CashFlowController;
+use App\Http\Controllers\RoiCalculationController;
 
 Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -26,3 +27,4 @@ Route::resource('rehab-projects', RehabProjectController::class);
 Route::resource('tenants', TenantController::class);
 Route::get('/portfolio-metrics', [PortfolioMetricController::class, 'index'])->name('portfolio-metrics.index');
 Route::resource('cash-flows', CashFlowController::class);
+Route::resource('roi-calculations', RoiCalculationController::class);
