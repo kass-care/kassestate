@@ -27,8 +27,9 @@
         <a href="{{ route('properties.index') }}">🏘 Properties</a>
         <a href="{{ route('deal-analyses.create') }}">🔥 Deal Analyzer</a>
         <a href="{{ route('refinances.create') }}">🏦 Refinance Center</a>
-        <a href="#">🔨 Rehab Tracker</a>
-        <a href="#">📄 Documents</a>
+        <a href="{{ route('rehab-projects.index') }}">🔨 Rehab Tracker</a>
+	<a href="{{ route('documents.index') }}">📄 Documents</a>
+        
         <a href="#">⚙ Settings</a>
     </div>
 

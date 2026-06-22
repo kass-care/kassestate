@@ -6,7 +6,9 @@ use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\DealAnalysisController;
 use App\Http\Controllers\RefinanceController;
 use App\Http\Controllers\RehabProjectController;
+use App\Http\Controllers\DocumentController;
 
+Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/properties', [PropertyController::class, 'index'])->name('properties.index');
