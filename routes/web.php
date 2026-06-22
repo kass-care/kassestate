@@ -7,6 +7,7 @@ use App\Http\Controllers\DealAnalysisController;
 use App\Http\Controllers\RefinanceController;
 use App\Http\Controllers\RehabProjectController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\TenantController;
 
 Route::resource('documents', DocumentController::class);
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -19,3 +20,4 @@ Route::resource('refinances', RefinanceController::class);
 Route::resource('refinances', RefinanceController::class);
 
 Route::resource('rehab-projects', RehabProjectController::class);
+Route::resource('tenants', TenantController::class);
