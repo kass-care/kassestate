@@ -18,39 +18,39 @@
 
 <div class="container">
 <form method="POST" action="{{ route('deal-pipelines.store') }}">
-@csrf
+    @csrf
 
-<label>Property Address</label>
-<input type="text" name="property_address" required>
+    <label>Property Address</label>
+    <input type="text" name="property_address" required>
 
-<label>Seller Name</label>
-<input type="text" name="seller_name">
+    <label>Seller Name</label>
+    <input type="text" name="seller_name">
 
-<label>Purchase Price</label>
-<input type="number" step="0.01" name="purchase_price">
+    <label>Purchase Price</label>
+    <input type="number" step="0.01" name="purchase_price">
 
-<label>ARV</label>
-<input type="number" step="0.01" name="arv">
+    <label>ARV</label>
+    <input type="number" step="0.01" name="arv">
 
-<label>Target Close Date</label>
-<input type="date" name="target_close_date">
+    <label>Target Close Date</label>
+    <input type="date" name="target_close_date">
 
-<label>Status</label>
-<select name="status">
-    <option>Lead</option>
-    <option>Analyzing</option>
-    <option>Offer Submitted</option>
-    <option>Under Contract</option>
-    <option>Rehab</option>
-    <option>Refinance</option>
-    <option>Rental</option>
-    <option>Completed BRRRR</option>
-</select>
+    <label>Status</label>
+    <select name="status">
+        <option>Lead</option>
+        <option>Analyzing</option>
+        <option>Offer Submitted</option>
+        <option>Under Contract</option>
+        <option>Rehab</option>
+        <option>Refinance</option>
+        <option>Rental</option>
+        <option>Completed BRRRR</option>
+    </select>
 
-<label>Notes</label>
-<textarea name="notes"></textarea>
+    <label>Notes</label>
+    <textarea name="notes"></textarea>
 
-<button type="submit">Save Deal</button>
+    <button type="submit">Save Deal</button>
 </form>
 
 <br>
